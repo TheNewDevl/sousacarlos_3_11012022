@@ -1,17 +1,14 @@
-/* Error: expected "}".
- *   ,
- * 7 | }
- *   |  ^
- *   '
- *   sass/main.scss 7:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a   \2577 \a 7 \2502  }\a   \2502   ^\a   \2575 \a   sass/main.scss 7:2  root stylesheet';
+body {
+  background-color: blue;
+  font-size: 1em;
 }
+body h1 {
+  font-size: 20px;
+  color: white;
+}
+
+p {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
