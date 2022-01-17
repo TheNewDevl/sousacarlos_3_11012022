@@ -130,16 +130,31 @@ header {
 }
 
 .section-restaurants {
-  padding: 55px 20px;
+  padding: 55px 20px 65px;
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.footer {
+  padding: 20px 20px;
+  color: #f6f6f6;
+  background-color: #373737;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .logo {
   margin: 15px 0 5px 0;
   font-size: 1.8em;
+}
+.logo.footer-logo {
+  font-size: 1.1em;
+  margin: 5px 0 15px;
 }
 
 .btn {
@@ -198,6 +213,23 @@ header {
 }
 .card-info__title {
   font-size: 1.1em;
+}
+.card-info__loc {
+  color: #5d5d5d;
+}
+
+.footer-nav__item.utensils::before {
+  content: "\f2e7";
+  font-size: 0.8em;
+  font-family: FontAwesome;
+  margin-right: 12px;
+}
+
+.footer-nav__item.hands::before {
+  content: "\f4c4";
+  font-size: 0.6em;
+  font-family: FontAwesome;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
