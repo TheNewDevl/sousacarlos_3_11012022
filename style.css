@@ -173,9 +173,20 @@ header {
 }
 
 .insert-new {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 10px;
+  top: 10px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  width: 25%;
+  min-width: 60px;
+  height: 12%;
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 .card-info {
@@ -186,7 +197,7 @@ header {
   box-shadow: 0 7px 7px #dddddd;
 }
 .card-info__title {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */

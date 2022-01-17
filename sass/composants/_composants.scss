@@ -32,11 +32,19 @@
         border-top-right-radius: $default-radius;
     }
 }
-
+// encart "nouveau"
 .insert-new{
+    @include flex-center;
     position: absolute;
-    right: 5px;
-    top:   5px;
+    right: 10px;
+    top:   10px;
+    background-color: $color-tertiary;
+    color: darken($color: $color-tertiary, $amount: 35%);
+    width:  25%;
+    min-width: 60px;
+    height: 12%;
+    font-weight: 600;
+    font-size: 0.9em;
 }
 .card-info{
     border-radius: 0 0 20px 20px;
