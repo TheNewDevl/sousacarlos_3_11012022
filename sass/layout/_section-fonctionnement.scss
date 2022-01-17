@@ -1,0 +1,43 @@
+.tuto-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px 50px 31px;
+    &__title{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.tuto-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-background;
+    height: 75px;
+    width:  100%;
+    border-radius: 20px;
+    box-shadow: $shadow-default;
+    position: relative;
+    &__step{
+        @include flex-center;
+        position: absolute;
+        left: -11px;
+        background: $color-primary;
+        border-radius: 100%;
+        width: 22px;
+        height: 22px;
+        color: $color-font-btn;
+        font-size: 0.8em;
+    }
+    &__icon{
+        position: absolute;
+        left: 30px;
+        font-size: $btn-icon-size;
+        color: darken($color: $color-background, $amount: 50%);
+    }
+    &__text{
+        padding-left: 75px;
+        font-weight: 500;
+        color: darken($color: $color-background, $amount: 70%);
+    }
+}
