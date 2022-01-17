@@ -1,10 +1,16 @@
-nav{
+.nav{
     text-align: center;
-    padding: 40px;
+    padding: 40px 0;
     background-color: $color-background;
     @include flex-center(column);
-    row-gap: 20px;
-    & h3{
-        font-size: 1.5em;
+    row-gap: 15px;
+    &__title{
+        font-size: 1.4em;
+        padding: 0 45px;
+        line-height: 1.2em;
+    }
+    &__text{
+        font-size: 1.1em;
+        color: darken($color: $color-background, $amount: 40%);
     }
 }
