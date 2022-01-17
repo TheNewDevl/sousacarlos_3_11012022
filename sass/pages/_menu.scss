@@ -1,0 +1,35 @@
+//link to back to main page 
+.index{
+    position: absolute;
+    left: 25px;
+    top:  25px;
+    font-size: 1.3em;
+}
+
+//top image 
+.top-image__img{
+    width:  100%;
+    height: 280px;
+    @include objectfit;
+}
+//menu container
+main{
+ 
+}
+.menu{
+    width: 100%;
+    padding: 0 20px;
+    background-color: $color-background;
+    transform: translateY(-55px);
+    border-top-left-radius:  40px;
+    border-top-right-radius: 40px;
+    //restaurant name
+    &__title{
+        padding: 30px 0;
+        font-size: $title-menu-font-size;
+    }
+}
+
+hr{
+    color: $color-tertiary;
+}
