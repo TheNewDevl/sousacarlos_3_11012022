@@ -18,6 +18,10 @@
     border-radius: 20px;
     box-shadow: $shadow-default;
     position: relative;
+    &.active, &:hover{
+        background-color: lighten($color: $color-primary, $amount: 36%);
+        color: $color-primary;
+    }
     &__step{
         @include flex-center;
         position: absolute;
@@ -34,6 +38,10 @@
         left: 30px;
         font-size: $btn-icon-size;
         color: darken($color: $color-background, $amount: 50%);
+        color: inherit;
+        &.active{
+            color: $color-primary;
+        }
     }
     &__text{
         padding-left: 75px;
