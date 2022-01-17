@@ -9,10 +9,13 @@ body{
 li{
     list-style: none;
 }
-a{
+a, img{
     text-decoration: none;
     display: block;
+    color: inherit;
 }
 .title{
     font-size: $title-font-size;
 }
+
+

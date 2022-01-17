@@ -22,9 +22,10 @@ li {
   list-style: none;
 }
 
-a {
+a, img {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 .title {
@@ -76,7 +77,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 50px 20px 50px 31px;
+  padding: 50px 20px 70px 31px;
 }
 .tuto-container__title {
   width: 100%;
@@ -93,6 +94,7 @@ header {
   border-radius: 20px;
   box-shadow: 0 7px 7px #dddddd;
   position: relative;
+  color: #777777;
 }
 .tuto-btn.active, .tuto-btn:hover {
   background-color: #f4eefc;
@@ -116,7 +118,6 @@ header {
   position: absolute;
   left: 30px;
   font-size: 1.2em;
-  color: #777777;
   color: inherit;
 }
 .tuto-btn__icon.active {
@@ -126,6 +127,14 @@ header {
   padding-left: 75px;
   font-weight: 500;
   color: #444444;
+}
+
+.section-restaurants {
+  padding: 55px 20px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .logo {
@@ -145,6 +154,39 @@ header {
   align-items: center;
   justify-content: center;
   box-shadow: 0 7px 7px #dddddd;
+}
+
+.card-restaurant {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+.card-restaurant__img {
+  width: 100%;
+  height: calc(100% - 75px);
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.insert-new {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.card-info {
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+  padding: 15px;
+  line-height: 1.5em;
+  box-shadow: 0 7px 7px #dddddd;
+}
+.card-info__title {
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
