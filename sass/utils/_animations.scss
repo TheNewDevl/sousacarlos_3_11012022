@@ -1,0 +1,17 @@
+@keyframes appearance {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@for $i from 1 to 17 {
+    .ann-#{$i} {
+        opacity: 0;
+        animation: appearance 2s forwards $i * 100ms;
+    }
+}

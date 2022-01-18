@@ -301,4 +301,94 @@ header {
   opacity: 0.8;
 }
 
+@keyframes appearance {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.ann-1 {
+  opacity: 0;
+  animation: appearance 2s forwards 100ms;
+}
+
+.ann-2 {
+  opacity: 0;
+  animation: appearance 2s forwards 200ms;
+}
+
+.ann-3 {
+  opacity: 0;
+  animation: appearance 2s forwards 300ms;
+}
+
+.ann-4 {
+  opacity: 0;
+  animation: appearance 2s forwards 400ms;
+}
+
+.ann-5 {
+  opacity: 0;
+  animation: appearance 2s forwards 500ms;
+}
+
+.ann-6 {
+  opacity: 0;
+  animation: appearance 2s forwards 600ms;
+}
+
+.ann-7 {
+  opacity: 0;
+  animation: appearance 2s forwards 700ms;
+}
+
+.ann-8 {
+  opacity: 0;
+  animation: appearance 2s forwards 800ms;
+}
+
+.ann-9 {
+  opacity: 0;
+  animation: appearance 2s forwards 900ms;
+}
+
+.ann-10 {
+  opacity: 0;
+  animation: appearance 2s forwards 1000ms;
+}
+
+.ann-11 {
+  opacity: 0;
+  animation: appearance 2s forwards 1100ms;
+}
+
+.ann-12 {
+  opacity: 0;
+  animation: appearance 2s forwards 1200ms;
+}
+
+.ann-13 {
+  opacity: 0;
+  animation: appearance 2s forwards 1300ms;
+}
+
+.ann-14 {
+  opacity: 0;
+  animation: appearance 2s forwards 1400ms;
+}
+
+.ann-15 {
+  opacity: 0;
+  animation: appearance 2s forwards 1500ms;
+}
+
+.ann-16 {
+  opacity: 0;
+  animation: appearance 2s forwards 1600ms;
+}
+
 /*# sourceMappingURL=style.css.map */
