@@ -1,35 +1,59 @@
-//link to back to main page 
-.index{
+//link to back to main page
+.index {
     position: absolute;
     left: 25px;
-    top:  25px;
+    top: 25px;
     font-size: 1.3em;
 }
 
-//top image 
-.top-image__img{
-    width:  100%;
+//top image
+.top-image__img {
+    width: 100%;
     height: 280px;
     @include objectfit;
 }
 //menu container
-main{
- 
-}
-.menu{
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 100%;
     padding: 0 20px;
     background-color: $color-background;
     transform: translateY(-55px);
-    border-top-left-radius:  40px;
+    border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    box-shadow: 0 55px 0px$color-background;
     //restaurant name
-    &__title{
-        padding: 30px 0;
+    &__title {
+        padding: 30px 0 0;
         font-size: $title-menu-font-size;
     }
 }
 
-hr{
-    color: $color-tertiary;
+// entrée, plat, dessert
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    // title entrée, plat, dessert
+    &__title {
+        color: darken($color: $color-background, $amount: 50%);
+        font-weight: 400;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    &__border {
+        width: 50px;
+        box-shadow: 2px -10px 0 2px $color-tertiary;
+    }
+}
+
+//CTA
+.cta__btn {
+    align-self: center;
+    &:hover {
+        opacity: 0.8;
+    }
 }

@@ -1,16 +1,24 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 
 $color-background: #f6f6f6;
-$color-bg-btn: linear-gradient(3deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$color-bg-btn: linear-gradient(
+    3deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
+);
 $color-font-btn: #fff;
 
-$shadow-default: 0 7px 7px darken($color: $color-background, $amount: 10%);
-
+$shadow-default: 0 7px 7px
+    darken(
+        $color: $color-background,
+        $amount: 10%,
+    );
+$shadow-box-menu: 0 0 10px darken($color-background, $amount: 15%);
 $title-font-size: 1.4em;
 $title-menu-font-size: 1.75em;
-$title-card-font-size : 1.1em;
+$title-card-font-size: 1.1em;
 $btn-icon-size: 1.2em;
 
 $default-gap: 20px;
