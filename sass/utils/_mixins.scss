@@ -5,3 +5,7 @@
     align-items: center;
     justify-content: center;
 }
+@mixin objectfit {
+    object-fit: cover;
+    object-position: center;
+}
