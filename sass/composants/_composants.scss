@@ -67,6 +67,7 @@
 }
 .card-info {
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     position: relative;
     border-radius: 0 0 20px 20px;
@@ -74,13 +75,23 @@
     padding: 15px;
     line-height: 1.5em;
     box-shadow: $shadow-default;
+    &__text-container {
+        flex-grow: 1;
+        min-width: 50px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
     &__title {
         font-size: $title-card-font-size;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &__loc {
         color: darken($color: $color-background, $amount: 60%);
         &--menu {
             font-size: 0.85em;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
     &__price {
@@ -89,7 +100,6 @@
     }
     &.card-info__menu {
         display: flex;
-        justify-content: space-between;
         width: 100%;
         height: 70px;
         border-radius: 20px;
