@@ -15,6 +15,11 @@ $shadow-default: 0 7px 7px
         $color: $color-background,
         $amount: 10%,
     );
+$shadow-hover: 0 7px 10px
+    darken(
+        $color: $color-background,
+        $amount: 30%,
+    );
 $shadow-box-menu: 0 0 10px darken($color-background, $amount: 15%);
 $title-font-size: 1.4em;
 $title-menu-font-size: 1.75em;

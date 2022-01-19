@@ -16,3 +16,45 @@
         animation: appearance 2s forwards $i * 100ms;
     }
 }
+
+// like animation
+.card-info-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.checkbox {
+    opacity: 0.01;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    &:checked + .checkbox__heart--checked {
+        opacity: 1;
+    }
+}
+.checkbox__heart {
+    font-size: 1.5em;
+    position: absolute;
+    z-index: 1;
+    &--checked {
+        display: none;
+
+        @include transition(1s);
+        opacity: 1;
+        background: $color-bg-btn;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.btn111 {
+    text-decoration: none;
+    background: $primary;
+    @if (lightness($primary) > 50%) {
+        color: #000;
+    } @else {
+        color: #fff;
+    }
+}
