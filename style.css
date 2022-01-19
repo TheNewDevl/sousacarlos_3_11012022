@@ -170,7 +170,7 @@ header {
   align-items: center;
   justify-content: center;
   box-shadow: 0 7px 7px #dddddd;
-  transition: all 400ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .btn:hover {
   opacity: 0.8;
