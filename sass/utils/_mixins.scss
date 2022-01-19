@@ -9,3 +9,17 @@
     object-fit: cover;
     object-position: center;
 }
+
+@mixin transition($duration: 400ms) {
+    transition: all $duration ease-in-out;
+}
+
+@mixin shadow($type: $shadow-default) {
+    box-shadow: $type;
+}
+
+@mixin hover-effect($opacity: 0.8) {
+    opacity: $opacity;
+    @include shadow($shadow-hover);
+    transform: scale(1.02);
+}
