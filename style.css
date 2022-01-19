@@ -296,9 +296,14 @@ header {
   border-top-right-radius: 40px;
   box-shadow: 0 55px 0px #f6f6f6;
 }
-.menu__title {
-  padding: 30px 0 0;
+.menu-title__title {
   font-size: 1.75em;
+}
+.menu-title__container {
+  padding: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .category {
@@ -423,26 +428,29 @@ header {
   width: 30px;
   height: 30px;
 }
-.checkbox:checked + .checkbox__heart--checked {
+.checkbox:checked ~ .checkbox__heart--checked {
   opacity: 1;
+}
+.checkbox:checked ~ .checkbox__heart--unchecked {
+  opacity: 0.01;
 }
 
 .checkbox__heart {
   font-size: 1.5em;
   position: absolute;
   z-index: 1;
-  mix-blend-mode: exclusion;
 }
 .checkbox__heart--checked {
-  display: none;
-  mix-blend-mode: multiply;
   transition: all 1s ease-in-out;
-  opacity: 0;
+  opacity: 0.01;
   background: linear-gradient(3deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.checkbox__heart--unchecked {
+  transition: all 1s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
