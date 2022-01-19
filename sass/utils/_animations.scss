@@ -17,7 +17,11 @@
     }
 }
 
-// like animation
+// like animation, The clickable link takes the width and height
+// of the card. With z-index the checkbox is placed in the
+// foreground and hidden with opacity 0. 2 hearts are
+// placed below the checkbox. depending on checked or not one of
+// them becomes transparent
 .card-info-icon {
     position: relative;
     display: flex;
