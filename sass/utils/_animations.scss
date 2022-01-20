@@ -84,3 +84,91 @@
         margin-right: -15px;
     }
 }
+
+// loader
+
+.loader__container {
+    background-color: $color-background;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include flex-center(column);
+}
+
+@keyframes loadbar {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes loadbar_container {
+    25% {
+        transform: translateX(5%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    75% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.loading-bar {
+    animation: loadbar 2500ms ease-in-out;
+    background-color: $color-tertiary;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-101%);
+
+    &__container {
+        border: 5px solid darken($color: $color-secondary, $amount: 0%);
+        width: 50%;
+        height: 5%;
+        overflow: hidden;
+        opacity: 0.5;
+        animation: loadbar_container 500ms ease-in-out 2500ms;
+    }
+}
+.test1 {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+
+@mixin logo-appear {
+}
+.heading-logo--anim {
+    width: max-content;
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: 10vw;
+    background: $color-bg-btn;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: translateY(-30%);
+}
+@keyframes logo-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@for $i from 1 to 6 {
+    .heading-logo--anim-#{$i} {
+        animation: logo-appear 3s forwards ease-in-out ($i * 400ms);
+        overflow: hidden;
+    }
+}
