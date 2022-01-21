@@ -288,9 +288,13 @@ header {
   font-size: 1.3em;
 }
 
+.menu-header {
+  position: relative;
+}
+
 .top-image__img {
   width: 100%;
-  height: 280px;
+  height: 295px;
   object-fit: cover;
   object-position: center;
 }
@@ -300,11 +304,8 @@ header {
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  padding: 0 20px;
+  padding: 25px 20px 50px 20px;
   background-color: #f6f6f6;
-  transform: translateY(-55px);
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
   box-shadow: 0 55px 0px #f6f6f6;
 }
 .menu-title__title {
@@ -315,6 +316,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 30px 20px 0px 20px;
 }
 
 .category {
