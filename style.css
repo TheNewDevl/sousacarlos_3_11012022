@@ -17,6 +17,8 @@ h1,
 
 body {
   background-color: #fff;
+  max-width: 1400px;
+  margin: auto;
 }
 
 li {
@@ -84,6 +86,21 @@ header {
 .tuto-container__title {
   width: 100%;
   margin-bottom: 10px;
+  margin-left: -11px;
+}
+@media screen and (min-width: 768px) {
+  .tuto-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tuto-container {
+    text-align: center;
+    justify-content: space-evenly;
+  }
 }
 
 .tuto-btn {
@@ -101,6 +118,16 @@ header {
 .tuto-btn.active, .tuto-btn:hover {
   background-color: #f4eefc;
   color: #9356dc;
+}
+@media screen and (min-width: 768px) {
+  .tuto-btn {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .tuto-btn {
+    width: 30%;
+  }
 }
 .tuto-btn__step {
   display: flex;
@@ -137,6 +164,17 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.section-restaurants__title {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: none;
+  }
 }
 
 .footer {
@@ -187,6 +225,11 @@ header {
   position: relative;
   transition: all 400ms ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .card-restaurant {
+    width: 48%;
+  }
+}
 .card-restaurant:hover {
   opacity: 1;
   box-shadow: 0 7px 10px #aaaaaa;
@@ -223,6 +266,36 @@ header {
   height: 12%;
   font-weight: 600;
   font-size: 0.9em;
+}
+.insert-new span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.insert-new span:nth-child(1) {
+  transform: rotate(0deg);
+}
+.insert-new span:nth-child(2) {
+  transform: rotate(180deg);
+}
+.insert-new span:nth-child(3) {
+  transform: rotate(90deg);
+  width: 30px;
+  right: 0;
+}
+.insert-new span:nth-child(4) {
+  transform: rotate(270deg);
+  width: 30px;
+  left: 0;
+}
+.insert-new span::before {
+  content: "   ";
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(45deg, #9356dc 0%, #ff79da 46%, #7dc9b7 92%);
+  height: 2px;
+  animation: moving-border 4s infinite linear;
 }
 
 .card-info {
@@ -281,10 +354,14 @@ header {
   margin-right: 10px;
 }
 
+.heading-logo__container {
+  position: relative;
+}
+
 .index {
   position: absolute;
   left: 25px;
-  top: 25px;
+  top: 10px;
   font-size: 1.3em;
 }
 
@@ -501,6 +578,25 @@ header {
 }
 .checkbox__item:checked + .box {
   margin-right: -15px;
+}
+
+@keyframes moving-border {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

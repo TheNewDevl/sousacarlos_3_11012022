@@ -1,11 +1,13 @@
+.heading-logo__container {
+    position: relative;
+}
 //link to back to main page
 .index {
     position: absolute;
     left: 25px;
-    top: 25px;
+    top: 10px;
     font-size: 1.3em;
 }
-
 //top image
 .menu-header {
     position: relative;

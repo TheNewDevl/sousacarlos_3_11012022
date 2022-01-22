@@ -23,3 +23,15 @@
     @include shadow($shadow-hover);
     transform: scale(1.02);
 }
+
+@mixin flex-big-screens($justify: center, $text-align: none) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    text-align: $text-align;
+}
+@mixin media($screen-type: 768px) {
+    @media screen and (min-width: map-get($screen-sizes, $screen-type)) {
+        @content;
+    }
+}

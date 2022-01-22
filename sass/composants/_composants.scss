@@ -32,6 +32,10 @@
     border-radius: $default-radius;
     position: relative;
     @include transition;
+    @include media(tablette) {
+        width: 48%;
+    }
+
     &:hover {
         @include hover-effect(1);
     }
@@ -64,7 +68,43 @@
     height: 12%;
     font-weight: 600;
     font-size: 0.9em;
+    span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        &:nth-child(1) {
+            transform: rotate(0deg);
+        }
+        &:nth-child(2) {
+            transform: rotate(180deg);
+        }
+        &:nth-child(3) {
+            transform: rotate(90deg);
+            width: 30px;
+            right: 0;
+        }
+        &:nth-child(4) {
+            transform: rotate(270deg);
+            width: 30px;
+            left: 0;
+        }
+        &::before {
+            content: "   ";
+            position: absolute;
+            width: 100%;
+            background: linear-gradient(
+                45deg,
+                rgba(147, 86, 220, 1) 0%,
+                rgba(255, 121, 218, 1) 46%,
+                rgba(125, 201, 183, 1) 92%
+            );
+            height: 2px;
+            animation: moving-border 4s infinite linear;
+        }
+    }
 }
+
 .card-info {
     display: flex;
     overflow: hidden;

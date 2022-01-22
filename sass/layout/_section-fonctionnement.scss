@@ -1,29 +1,44 @@
-.tuto-container{
+.tuto-container {
     display: flex;
     flex-direction: column;
     gap: $default-gap;
     padding: 50px 20px 70px 31px;
-    &__title{
+    &__title {
         width: 100%;
         margin-bottom: 10px;
+        margin-left: -11px;
+    }
+    @include media(tablette) {
+        @include flex-big-screens;
+    }
+    @include media(desktop) {
+        text-align: center;
+        justify-content: space-evenly;
     }
 }
-.tuto-btn{
+.tuto-btn {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: $color-background;
     height: 75px;
-    width:  100%;
+    width: 100%;
     border-radius: 20px;
     box-shadow: $shadow-default;
     position: relative;
     color: darken($color: $color-background, $amount: 50%);
-    &.active, &:hover{
+    &.active,
+    &:hover {
         background-color: lighten($color: $color-primary, $amount: 36%);
         color: $color-primary;
     }
-    &__step{
+    @include media(tablette) {
+        width: 48%;
+    }
+    @include media(desktop) {
+        width: 30%;
+    }
+    &__step {
         @include flex-center;
         position: absolute;
         left: -11px;
@@ -34,16 +49,16 @@
         color: $color-font-btn;
         font-size: 0.8em;
     }
-    &__icon{
+    &__icon {
         position: absolute;
         left: 30px;
         font-size: $btn-icon-size;
         color: inherit;
-        &.active{
+        &.active {
             color: $color-primary;
         }
     }
-    &__text{
+    &__text {
         padding-left: 75px;
         font-weight: 500;
         color: darken($color: $color-background, $amount: 70%);
