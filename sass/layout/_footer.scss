@@ -1,10 +1,12 @@
-.footer{
-    padding: 20px 20px;
+.footer {
     color: $color-background;
     background-color: darken($color: $color-background, $amount: 75%);
-    &-nav{
+    &-nav {
         display: flex;
         flex-direction: column;
         gap: 6px;
+    }
+    &-inner {
+        padding: 20px 20px;
     }
 }

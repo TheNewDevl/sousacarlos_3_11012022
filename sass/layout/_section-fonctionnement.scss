@@ -10,9 +10,9 @@
     }
     @include media(tablette) {
         @include flex-big-screens;
+        text-align: center;
     }
     @include media(desktop) {
-        text-align: center;
         justify-content: space-evenly;
     }
 }

@@ -17,8 +17,6 @@ h1,
 
 body {
   background-color: #fff;
-  max-width: 1400px;
-  margin: auto;
 }
 
 li {
@@ -34,6 +32,12 @@ img {
 
 .title {
   font-size: 1.4em;
+}
+
+.page-container,
+.footer-inner {
+  max-width: 1400px;
+  margin: auto;
 }
 
 header {
@@ -94,11 +98,11 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     text-align: none;
+    text-align: center;
   }
 }
 @media screen and (min-width: 992px) {
   .tuto-container {
-    text-align: center;
     justify-content: space-evenly;
   }
 }
@@ -169,6 +173,11 @@ header {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
+  .section-restaurants__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .section-restaurants {
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,7 +187,6 @@ header {
 }
 
 .footer {
-  padding: 20px 20px;
   color: #f6f6f6;
   background-color: #373737;
 }
@@ -187,10 +195,14 @@ header {
   flex-direction: column;
   gap: 6px;
 }
+.footer-inner {
+  padding: 20px 20px;
+}
 
 .logo {
   margin: 15px 0 5px 0;
   font-size: 1.8em;
+  font-size: clamp(1.8em, 3vw + 1em, 4em);
 }
 .logo.footer-logo {
   font-size: 1.1em;
@@ -361,8 +373,9 @@ header {
 .index {
   position: absolute;
   left: 25px;
-  top: 10px;
+  top: 25%;
   font-size: 1.3em;
+  font-size: clamp(1.3em, 1vw + 1em, 4em);
 }
 
 .menu-header {
@@ -371,7 +384,9 @@ header {
 
 .top-image__img {
   width: 100%;
-  height: 295px;
+  min-height: 295px;
+  height: 50vw;
+  max-height: 450px;
   object-fit: cover;
   object-position: center;
 }
@@ -383,10 +398,28 @@ header {
   width: 100%;
   padding: 25px 20px 50px 20px;
   background-color: #f6f6f6;
-  box-shadow: 0 55px 0px #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .category {
+    width: 47.5%;
+  }
+}
+@media screen and (min-width: 1228px) {
+  .menu .category {
+    width: 31%;
+  }
 }
 .menu-title__title {
   font-size: 1.75em;
+  font-size: clamp(1.75em, 2vw + 1em, 2.5em);
 }
 .menu-title__container {
   padding: 30px 0 0;
@@ -420,6 +453,11 @@ header {
 
 .cta__btn {
   align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .cta__btn {
+    width: 100%;
+  }
 }
 
 @keyframes appearance {

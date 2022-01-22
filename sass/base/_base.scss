@@ -5,8 +5,6 @@
 }
 body {
     background-color: #fff;
-    max-width: 1400px;
-    margin: auto;
 }
 li {
     list-style: none;
@@ -19,4 +17,10 @@ img {
 }
 .title {
     font-size: $title-font-size;
+}
+
+.page-container,
+.footer-inner {
+    max-width: 1400px;
+    margin: auto;
 }
