@@ -8,5 +8,11 @@
     }
     &-inner {
         padding: 20px 20px;
+        @include media(tablette) {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 100px;
+            justify-content: flex-end;
+        }
     }
 }
