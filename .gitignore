@@ -9,7 +9,7 @@ Maquettes Ohmyfood 4/maquettes/Menu - À la française.png
 Maquettes Ohmyfood 4/maquettes/Menu - La note enchantée.png
 Maquettes Ohmyfood 4/maquettes/Menu - La palette du goût.png
 Maquettes Ohmyfood 4/maquettes/Menu - Le délice des sens.png
-sass/main.scss
+
 dart-sass/src/sass.snapshot
 dart-sass/src/LICENSE
 dart-sass/src/dart
@@ -19,5 +19,6 @@ style.css.map
 .gitignore
 Maquettes Ohmyfood 4/maquettes/Animations/Animation - Page Menu - Apparition progressive.mp4
 Maquettes Ohmyfood 4/maquettes/Animations/Animation - Page Menu - Sélection d_un plat.mp4
+
 
 .vscode/settings.json
