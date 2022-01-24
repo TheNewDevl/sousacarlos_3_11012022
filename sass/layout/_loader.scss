@@ -1,3 +1,13 @@
+.no-scroll {
+    overflow: hidden;
+    animation: no-scroll 1ms forwards 3000ms;
+}
+@keyframes no-scroll {
+    100% {
+        overflow: initial;
+    }
+}
+
 .loader {
     animation: loader 200ms forwards linear 2800ms;
     position: absolute;
