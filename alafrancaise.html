@@ -4,13 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et reduire leur temps d’attente dans les restaurants !"
+        />
+        <link rel="icon" href="assets/images/logo/ohmyfood@2x.svg" />
         <title>OhMyFood - À la française</title>
 
         <!-- styles -->
         <link rel="stylesheet" href="style.css" />
     </head>
+
     <body>
+        <!-- max width page container -->
         <div class="page-container">
+            <!-- header -->
             <header>
                 <div class="heading-logo__container">
                     <nav>
@@ -21,7 +29,7 @@
                     <h1 class="logo heading-logo">ohmyfood</h1>
                 </div>
             </header>
-
+            <!-- rounded menu header -->
             <section class="menu-header">
                 <div class="top-image">
                     <img
@@ -32,9 +40,9 @@
                 </div>
 
                 <div class="menu-title__container">
-                    <h1 class="menu-title__title">À la française</h1>
+                    <h2 class="menu-title__title">À la française</h2>
                     <div class="card-info-icon">
-                        <input id="checkbox" class="checkbox" type="checkbox" />
+                        <input class="checkbox" type="checkbox" />
                         <i
                             class="checkbox__heart checkbox__heart--unchecked far fa-heart"
                         ></i>
@@ -45,10 +53,14 @@
                 </div>
             </section>
 
+            <!-- main thats contains the menu -->
             <main class="menu">
+                <!-- each "category" article contains the list of a type of dishes  -->
                 <article class="category">
                     <h2 class="category__title ann-1">Entrées</h2>
                     <div class="category__border ann-2"></div>
+
+                    <!-- one dish -->
                     <div class="card-info card-info__menu ann-3">
                         <div class="card-info__text-container">
                             <h3 class="card-info__title card-info__title--menu">
@@ -63,9 +75,8 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
+                        <!-- anim -->
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -86,9 +97,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -109,9 +118,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -122,6 +129,7 @@
                 <article class="category">
                     <h2 class="category__title ann-6">Plats</h2>
                     <div class="category__border ann-7"></div>
+
                     <div class="card-info card-info__menu ann-8">
                         <div class="card-info__text-container">
                             <h3 class="card-info__title card-info__title--menu">
@@ -136,9 +144,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -159,9 +165,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -182,9 +186,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -195,6 +197,7 @@
                 <article class="category">
                     <h2 class="category__title ann-11">Desserts</h2>
                     <div class="category__border ann-12"></div>
+
                     <div class="card-info card-info__menu ann-13">
                         <div class="card-info__text-container">
                             <h3 class="card-info__title card-info__title--menu">
@@ -209,9 +212,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -232,9 +233,7 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
@@ -255,20 +254,21 @@
                             class="checkbox__item"
                             type="checkbox"
                             name=" "
-                            id=" "
                         />
-
                         <div class="box"></div>
                         <div class="check-icon">
                             <i class="fas fa-check-circle"></i>
                         </div>
                     </div>
                 </article>
+                <!-- btn -->
                 <a href="#section-restaurants" class="btn cta__btn"
                     >Commander</a
                 >
             </main>
         </div>
+
+        <!-- footer -->
         <footer class="footer">
             <div class="footer-inner">
                 <div class="footer-logo__container">

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants !"
+            content="Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et reduire leur temps d’attente dans les restaurants !"
         />
         <link rel="icon" href="assets/images/logo/ohmyfood@2x.svg" />
         <title>OhMyFood!</title>
@@ -14,19 +14,26 @@
         <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
     </head>
+
     <body>
+        <!-- container for loader animation -->
         <div class="loader">
+            <!-- logo animation -->
             <div class="loader__text">
                 <span class="loader__text-1">oh</span>
                 <span class="loader__text-2">my</span>
                 <span class="loader__text-3">food</span>
                 <span class="loader__text-4">!</span>
             </div>
+            <!-- loading bar -->
             <div class="loader__bar">
                 <div class="loader__bar--inner"></div>
             </div>
         </div>
+
+        <!-- container uses for max-width size  -->
         <div class="page-container">
+            <!-- header -->
             <header>
                 <div class="heading-logo__container">
                     <h1 class="logo heading-logo">ohmyfood</h1>
@@ -38,6 +45,7 @@
                 </div>
             </header>
 
+            <!-- nav -->
             <nav class="nav">
                 <h3 class="title nav__title">
                     Réservez le menu qui vous convient
@@ -52,6 +60,7 @@
             </nav>
 
             <main>
+                <!-- tutorial section -->
                 <aside class="tuto-container">
                     <h2 class="title tuto-container__title">Fonctionnement</h2>
 
@@ -86,6 +95,8 @@
                     </div>
                 </aside>
 
+                <!-- restaurants display  -->
+
                 <section id="section-restaurants" class="section-restaurants">
                     <h2 class="title section-restaurants__title">
                         Restaurants
@@ -93,8 +104,8 @@
 
                     <article class="card-restaurant">
                         <div class="insert-new">
+                            <!-- border anim -->
                             <span></span><span></span><span></span><span></span>
-
                             <p>Nouveau</p>
                         </div>
                         <img
@@ -110,6 +121,7 @@
                                 <p class="card-info__loc">Ménilmontant</p>
                             </div>
                             <div class="card-info-icon">
+                                <!-- like  -->
                                 <input class="checkbox" type="checkbox" />
                                 <i
                                     class="checkbox__heart checkbox__heart--unchecked far fa-heart"
@@ -216,6 +228,8 @@
                 </section>
             </main>
         </div>
+
+        <!-- footer -->
         <footer class="footer">
             <div class="footer-inner">
                 <div class="footer-logo__container">
@@ -247,6 +261,7 @@
             </div>
         </footer>
 
+        <!-- font awesome cdn -->
         <script
             src="https://kit.fontawesome.com/341daa4a7e.js"
             crossorigin="anonymous"
