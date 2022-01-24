@@ -11,6 +11,6 @@
         }
     }
     @include media(tablette) {
-        @include flex-big-screens(space-evenly, none);
+        @include flex-big-screens(space-evenly, initial);
     }
 }

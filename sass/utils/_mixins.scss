@@ -24,7 +24,7 @@
     transform: scale(1.02);
 }
 
-@mixin flex-big-screens($justify: center, $text-align: none) {
+@mixin flex-big-screens($justify: center, $text-align: initial) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: $justify;

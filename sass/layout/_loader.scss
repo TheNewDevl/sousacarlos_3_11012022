@@ -1,6 +1,6 @@
 .no-scroll {
     overflow: hidden;
-    animation: no-scroll 1ms forwards 3000ms;
+    animation: no-scroll 1ms forwards 2999ms;
 }
 @keyframes no-scroll {
     100% {
@@ -9,7 +9,7 @@
 }
 
 .loader {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: $color-background;
@@ -38,21 +38,21 @@
         &-4 {
             color: $color-secondary;
             opacity: 0;
-            animation: exclamation 2000ms forwards 1000ms;
+            animation: exclamation 1500ms forwards 1000ms;
         }
     }
     &__bar {
         width: 80%;
         height: 5%;
         border: 5px solid $color-tertiary;
-        animation: bar-move 1200ms 1800ms;
+        animation: bar-move 800ms 1500ms;
         overflow: hidden;
         @include flex-center;
         &--inner {
             width: 99.5%;
             height: 85%;
             background: $color-tertiary;
-            animation: bar-appear 3000ms forwards
+            animation: bar-appear 2500ms forwards
                 cubic-bezier(0.89, 0.07, 0.27, 1.55);
         }
     }
@@ -101,7 +101,7 @@
             1000ms
             forwards
             cubic-bezier(0.68, -0.55, 0.27, 1.46)
-            ($i * 600ms);
+            ($i * 500ms);
     }
 }
 
