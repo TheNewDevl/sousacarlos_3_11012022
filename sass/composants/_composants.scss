@@ -53,8 +53,7 @@
     &__img {
         width: 100%;
         height: calc(100% - 75px);
-        object-fit: cover;
-        object-position: center;
+        @include objectfit;
         border-top-left-radius: $default-radius;
         border-top-right-radius: $default-radius;
     }

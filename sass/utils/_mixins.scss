@@ -7,7 +7,7 @@
 }
 @mixin objectfit {
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 65%;
 }
 
 @mixin transition($duration: 400ms) {
