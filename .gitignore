@@ -1,4 +1,13 @@
 .DS_Store
 .gitignore
 .vscode/settings.json
-assets/maquettes/*
+assets/maquettes/Menu - Le délice des sens.png
+assets/maquettes/Menu - La palette du goût.png
+assets/maquettes/Menu - La note enchantée.png
+assets/maquettes/Menu - À la française.png
+assets/maquettes/Accueil.png
+assets/Oh my food - Textes.txt
+assets/maquettes/Animations/Animation - Page Menu - Apparition progressive.mp4
+assets/maquettes/Animations/Animation - Page Menu - Sélection d_un plat.mp4
+assets/maquettes
+.gitignore
