@@ -96,12 +96,7 @@
             content: "   ";
             position: absolute;
             width: 100%;
-            background: linear-gradient(
-                45deg,
-                rgba(147, 86, 220, 1) 0%,
-                rgba(255, 121, 218, 1) 46%,
-                rgba(125, 201, 183, 1) 92%
-            );
+            background: darken($color: $color-tertiary, $amount: 40%);
             height: 2px;
             animation: moving-border 4s infinite linear;
         }
