@@ -1,5 +1,7 @@
 header {
     text-align: center;
+}
+.header--fixed {
     position: fixed;
     width: 100%;
     max-width: 1400px;
@@ -10,7 +12,6 @@ header {
     background-color: #fff;
     margin: auto;
 }
-
 .page-container--menu {
     margin-top: 70px;
     margin-top: clamp(62px, 10vw, 105px);
